@@ -1,4 +1,7 @@
-function header() {
+import Body from "./Body";
+import Footer from "./Footer";
+
+function Header() {
   return (
     <header>
       <h1>header</h1>
@@ -11,9 +14,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <header>
-        <h1>헬로우 리액트</h1>
-      </header>
+      <Header />
+      <h1>헬로우 리액트</h1>
+      <Body />
+      <Footer />
     </>
   );
 }
