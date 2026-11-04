@@ -43,13 +43,24 @@
 // export default Body;
 
 //css로 색상편집
-import "./body.css";
-function Body() {
+// import "./body.css";
+// function Body() {
+//   return (
+//     // <div style={{ background: "red", color: "blue" }}>
+//     <div className="body">
+//       {/* 백그라운드는 배경색, 컬러는 글자색 */}
+//       <h1>Body</h1>
+//     </div>
+//   );
+// }
+// export default Body;
+
+//tailwind css활용해서 색상편집
+function Body(name) {
+  console.log(name);
   return (
-    // <div style={{ background: "red", color: "blue" }}>
     <div className="body">
-      {/* 백그라운드는 배경색, 컬러는 글자색 */}
-      <h1>Body</h1>
+      <h1 className="text-pink-700">Body {name}</h1>
     </div>
   );
 }
