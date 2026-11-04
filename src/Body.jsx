@@ -56,11 +56,14 @@
 // export default Body;
 
 //tailwind css활용해서 색상편집
-function Body(name) {
-  console.log(name);
+function Body(props) {
+  // 윗줄 function Body({ name, location }) {}이렇게 써도 똑같은 구조 분해할당 안해도 되서 ㄱㅇㄷ임.
+  const { name, location } = props;
   return (
     <div className="body">
-      <h1 className="text-pink-700">Body {name}</h1>
+      <h1 className="text-pink-700">
+        body {name} {location}
+      </h1>
     </div>
   );
 }
